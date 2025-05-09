@@ -12,10 +12,10 @@ API_END_POINT = "https://www.thesportsdb.com"
 @mcp.tool()
 async def list_all_teams_in_a_league(sport, country):
     """
-    List all teams in a league
-    :param s: The name of the league
-    :param c: The country of the league
-    :return: A list of teams in the league
+    List all teams in a sport
+    :param s: The name of the sport
+    :param c: The country of the sport
+    :return: A list of teams in the sport
     """
     async with httpx.AsyncClient() as client:
         response = await client.get(
