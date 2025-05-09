@@ -30,4 +30,5 @@ async def list_all_teams_in_a_league(sport, country):
             },
         )
         response.raise_for_status()
-        return response.json()
+        data = response.json()
+        return [team["strTeam"] for team in data.get("teams", [])]
