@@ -23,7 +23,7 @@ Edit the config file
         "mcp[cli]",
         "mcp",
         "run",
-        "C:\\Users\\YOUR_USERNAME\\Documents\\GitHub\\thesportsdb-mcp-server\\server.py"
+        "C:\\Users\\YOUR_USERNAME\\Documents\\GitHub\\mcp-server-thesportsdb\\server.py"
       ]
     }
   }
