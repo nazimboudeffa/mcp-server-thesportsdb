@@ -2,15 +2,17 @@
 
 An MCP Server for The Sports DB
 
+# Quick Start
+
 ## Installation
 
 Clone locally and cd the folder
 
 `uv run mcp install server.py`
 
-## Claude
+## Check Claude
 
-Edit the config file
+Verify the config file
 
 ```
 {
