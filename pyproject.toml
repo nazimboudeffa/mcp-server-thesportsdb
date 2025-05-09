@@ -1,0 +1,15 @@
+[project]
+name = "mcp-server-thesportsdb"
+version = "0.1.0"
+description = "An MCP Server for The Sports DB"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.8.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "thesportsdb",
+    "mcp-server-thesportsdb",
+]
