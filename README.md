@@ -4,6 +4,11 @@
 
 An MCP Server for The Sports DB
 
+# Prerequisites
+
+- Python 3.12+
+- uv package manager
+- MCP-compatible client (e.g., Claude for Desktop)
 
 # Setup
 
