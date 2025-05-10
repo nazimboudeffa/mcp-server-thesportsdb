@@ -22,11 +22,12 @@ An MCP Server for The Sports DB
     uv add "mcp[cli]"
     ```
 
+4. Install the server
+    ```bash
+    uv run mcp install server.py
+    ```
+
 # Usage
-
-Run
-
-`uv run mcp install server.py`
 
 Then check the Claude for Desktop config file
 
