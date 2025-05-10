@@ -17,8 +17,15 @@ To install this MCP Server for Claude Desktop automatically via Smithery:
 - Python 3.12+
 - uv package manager
 - MCP-compatible client (e.g., Claude for Desktop)
+- Follow this tutorial https://github.com/modelcontextprotocol/python-sdk
 
 ## Installation
+
+Install Python
+
+`pip install uv`
+
+`uv add "mcp[cli]"`
 
 Clone locally and cd the folder
 
