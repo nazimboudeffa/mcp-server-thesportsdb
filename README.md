@@ -24,7 +24,7 @@ An MCP Server for The Sports DB
 
 4. Install the server
     ```bash
-    uv run mcp install server.py
+    mcp install server.py
     ```
 
 # Usage
