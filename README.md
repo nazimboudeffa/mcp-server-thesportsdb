@@ -33,7 +33,7 @@ Then check the Claude for Desktop config file
 ```json
 {
   "mcpServers": {
-    "alphavantage": {
+    "thesportsdb": {
       "command": "C:\\Users\\YOU_USERNAME\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.EXE",
       "args": [
         "run",
