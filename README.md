@@ -1,3 +1,5 @@
+https://www.linkedin.com/posts/nazimboudeffa_mon-premier-mcp-sur-smitheryai-activity-7326760165775454209-wB_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAMEPAoBdueet-RrggQFNjvkUv0U_YAaniI
+
 # MCP Server for The Sports DB
 
 An MCP Server for The Sports DB
