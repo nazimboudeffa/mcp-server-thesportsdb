@@ -1,5 +1,3 @@
-[![smithery badge](https://smithery.ai/badge/@nazimboudeffa/mcp-server-thesportsdb)](https://smithery.ai/server/@nazimboudeffa/mcp-server-thesportsdb)
-
 # MCP Server for The Sports DB
 
 An MCP Server for The Sports DB
