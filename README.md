@@ -4,41 +4,33 @@
 
 An MCP Server for The Sports DB
 
-# Installing via Smithery
 
-To install this MCP Server for Claude Desktop automatically via Smithery:
+# Setup
 
-`npx -y @smithery/cli install @nazimboudeffa/mcp-server-thesportsdb --client claude`
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/nazimboudeffa/mcp-server-thesportsdb.git
+   cd mcp-server-thesportsdb
+   ```
 
-# Manual installation
+2. Install dependencies
+    ```bash
+    pip install uv
+    uv add "mcp[cli]"
+    ```
 
-## Prerequisites
+# Usage
 
-- Python 3.12+
-- uv package manager
-- MCP-compatible client (e.g., Claude for Desktop)
-- Follow this tutorial https://github.com/modelcontextprotocol/python-sdk
-
-## Installation
-
-Install Python
-
-`pip install uv`
-
-`uv add "mcp[cli]"`
-
-Clone locally and cd the folder
+Run
 
 `uv run mcp install server.py`
 
-## Check Claude
+Then check the Claude for Desktop config file
 
-Verify the config file
-
-```
+```json
 {
   "mcpServers": {
-    "thesportsdb": {
+    "alphavantage": {
       "command": "C:\\Users\\YOU_USERNAME\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.EXE",
       "args": [
         "run",
