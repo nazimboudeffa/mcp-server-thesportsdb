@@ -1,4 +1,4 @@
-https://www.linkedin.com/posts/nazimboudeffa_mon-premier-mcp-sur-smitheryai-activity-7326760165775454209-wB_u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAMEPAoBdueet-RrggQFNjvkUv0U_YAaniI
+[![smithery badge](https://smithery.ai/badge/@nazimboudeffa/mcp-server-thesportsdb)](https://smithery.ai/server/@nazimboudeffa/mcp-server-thesportsdb)
 
 # MCP Server for The Sports DB
 
