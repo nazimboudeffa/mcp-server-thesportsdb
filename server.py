@@ -77,3 +77,64 @@ async def lookup_table_by_league_id_and_season(league_id, season):
             }
             for team in standings
         ]
+
+# Define an API call tool
+@mcp.tool()
+async def search_for_event_by_event_name(event_name):
+    """
+    Search for an event by name
+    :param event_name: The name of the event
+    :return: A list of events
+    """
+    async with httpx.AsyncClient() as client:
+        response = await client.get(
+            API_END_POINT+"/api/v1/json/3/searchevents.php",
+            params={
+                "e": event_name,
+            },
+            headers={
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
+        )
+        response.raise_for_status()
+        data = response.json()
+        return [
+            {
+                "event_id": event["idEvent"],
+                "event_name": event["strEvent"],
+                "event_date": event["dateEvent"],
+                "event_time": event["strTime"],
+            }
+            for event in data.get("event", [])
+        ]
+    
+# Define an API call tool
+@mcp.tool()
+async def search_for_players_by_name(player_name):
+    """
+    Search for players by name
+    :param player_name: The name of the player
+    :return: A list of players
+    """
+    async with httpx.AsyncClient() as client:
+        response = await client.get(
+            API_END_POINT+"/api/v1/json/3/searchplayers.php",
+            params={
+                "p": player_name,
+            },
+            headers={
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
+        )
+        response.raise_for_status()
+        data = response.json()
+        return [
+            {
+                "player_id": player["idPlayer"],
+                "player_name": player["strPlayer"],
+                "team_name": player["strTeam"],
+            }
+            for player in data.get("player", [])
+        ]
